@@ -1,0 +1,391 @@
+/************ Menu *************/
+header {
+    position: fixed;            /* Fixe le header en haut de la fenêtre */
+    top: 0;
+    left: 0;
+    width: 100%;                /* Occupe toute la largeur */
+    background-color: #fff;     /* Fond blanc */
+    padding: 10px;
+    display: flex;              /* Utilise Flexbox pour l'alignement */
+    justify-content: space-between; /* Espace entre le nom et le menu */
+    align-items: center;        /* Centre verticalement les éléments */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour le contraste */
+    z-index: 1000;              /* Assure que le header reste au-dessus des autres éléments */
+}
+
+header a {
+    text-decoration: none; /* Enlève le soulignement */
+    color: #333;           /* Couleur du texte */
+    font-size: 1.5em;      /* Taille de police plus grande */
+    font-weight: bold;     /* Texte en gras */
+}
+
+header a:hover {
+    color: #007bff;        /* Changement de couleur au survol */
+}
+
+header p {
+    margin: 0;                  /* Évite le margin par défaut */
+    font-size: 1.5em;           /* Taille de police pour le nom */
+    font-weight: bold;          /* Texte en gras */
+}
+
+header nav {
+    padding-right: 20px;
+}
+
+nav .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;              /* Aligne les éléments horizontalement */
+    gap: 20px;                  /* Espacement entre les liens */
+}
+
+nav .menu li a {
+    text-decoration: none;
+    color: #333;                /* Couleur du texte */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav .menu li a:hover {
+    color: white;             /* Couleur au survol */
+}
+
+body {
+    padding-top: 50px;          /* Ajuste selon la hauteur du header */
+    margin: 0;
+}
+
+/********** Accueil *************/
+.accueil {
+    margin: 0;
+    height: calc(100vh - 70px);                 /* Hauteur égale à celle de l'écran */
+    background-image: url('Images/ordiAccueil.jpg'); /* Chemin vers ton image */
+    background-size: cover;           /* L'image couvre tout le bloc */
+    background-position: center;      /* Centre l'image */
+    background-repeat: no-repeat;     /* Empêche la répétition de l'image */
+    display: flex;                    /* Utilise Flexbox pour centrer le contenu */
+    flex-direction: column;           /* Empile les enfants verticalement */
+    justify-content: center;          /* Centre verticalement le contenu */
+    align-items: center;              /* Centre horizontalement le contenu */
+    color: #fff;                      /* Texte en blanc pour le contraste */
+    text-align: center;               /* Centre le texte */
+    padding: 20px;                    /* Espacement interne pour le texte */
+
+}
+
+.bienvenue {
+    position: relative;
+    font-size: 3em
+}
+
+/********** A Propos de moi ***********/
+.aPropos {
+    display: flex;              /* Utilisation de flexbox pour aligner les éléments */
+    flex-direction: column;     /* Empêche les éléments de s'afficher côte à côte, les empile verticalement */
+    justify-content: center;    /* Centre horizontalement le contenu */
+    align-items: center;        /* Centre verticalement le contenu */
+    height: 100vh;              /* Hauteur de la fenêtre */
+    padding: 0;                 /* Enlever les marges et padding par défaut */
+    box-sizing: border-box;     /* Pour que le padding n'affecte pas la taille de l'élément */
+}
+
+h1.link {
+    font-size: 32px;            /* Taille du titre */
+    text-align: center;         /* Centre le texte horizontalement */
+    margin-bottom: 20px;        /* Marge en bas pour espacer le titre du contenu */
+    color: #333;                /* Couleur du titre */
+}
+
+.content {
+    display: flex;              /* Utilisation de flexbox pour aligner image et texte côte à côte */
+    align-items: center;        /* Centre verticalement l'image et le texte */
+    width: 80%;                 /* Limite la largeur du conteneur à 80% */
+    max-width: 1200px;          /* Limiter la largeur max si nécessaire */
+}
+
+.imageMoi {
+    width: 50%;                /* L'image prend 50% de la largeur du conteneur */
+    height: auto;              /* Conserver les proportions de l'image */
+    object-fit: cover;         /* S'assure que l'image couvre toute la zone sans déformation */
+    margin-right: 20px;        /* Marge à droite pour espacer l'image du texte */
+}
+
+.text {
+    font-size: 22px;           /* Taille de la police */
+    line-height: 1.5;          /* Espacement entre les lignes de texte */
+    width: 50%;                /* Le texte prend 50% de la largeur du conteneur */
+    color: #333;               /* Couleur du texte */
+    padding: 20px;             /* Un peu d'espace autour du texte */
+    box-sizing: border-box;    /* Inclure le padding dans la largeur totale */
+}
+
+/********** Mes compétences **********/
+.mesCompetence {
+    height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Titre de la section */
+.mesCompetence h1.link {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+
+/* Liste des compétences avec Flexbox pour aligner les items sur une ligne */
+.competences-list {
+    display: flex;
+    flex-wrap: wrap; /* Permet aux items de passer à la ligne si nécessaire */
+    justify-content: space-around; /* Répartir les éléments sur toute la largeur disponible */
+    gap: 30px;
+    padding: 0;
+}
+
+/* Chaque élément de compétence */
+.competence-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Largeur fixe des éléments */
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+/* Titre de chaque compétence */
+.competence-item h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Liste des compétences */
+.competence-item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.competence-item li {
+    font-size: 18px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Effet au survol */
+.competence-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Assurer que les éléments sont alignés correctement sur tous les écrans */
+@media screen and (max-width: 767px) {
+    .competences-list {
+        justify-content: center; /* Centrer les éléments sur les petits écrans */
+    }
+
+    .competence-item {
+        width: 100%; /* Les éléments prennent toute la largeur sur les petits écrans */
+    }
+}
+
+/********** En commun *************/
+
+ul li a {
+    background-color: whitesmoke;
+    padding: 5px;
+    border-radius: 20px;
+    transition: ease-in-out 1s;
+}
+
+ul li a:hover {
+    background-color: gray;
+    color: whitesmoke;
+    transition: ease-in-out 0.5s;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Quintessential', cursive;
+    font-weight: bold;
+
+}
+
+/*********** Formations ************/
+.mesFormations {
+    height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+/* Titre de la section */
+.mesFormations h1.link {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+/* Conteneur des formations */
+.formation-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ligne verticale au centre */
+.formation-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: #333;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Chaque élément de formation */
+.formation-item {
+    position: relative;
+    width: 50%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.formation-item.droite {
+    justify-content: flex-start;
+}
+
+/* Contenu des formations */
+.formation-item .content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: left;
+    position: relative;
+}
+
+/* Petits cercles sur la ligne verticale */
+.formation-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #333;
+    border-radius: 50%;
+    border: 3px solid #f4f4f4;
+    z-index: 1;
+}
+
+.formation-item.gauche::before {
+    right: -10px;
+    transform: translateY(-50%);
+}
+
+.formation-item.droite::before {
+    left: -10px;
+    transform: translateY(-50%);
+}
+
+/* Titres des formations */
+.formation-item h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Détails des formations */
+.formation-item p {
+    font-size: 18px;
+    color: #555;
+}
+
+/******** Contact ********/
+.contact {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+/* Titre de la section */
+.contact h1.link {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Conteneur des informations de contact */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Informations de contact */
+.contact-info {
+    font-size: 18px;
+    color: #555;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Liens vers les réseaux sociaux */
+.contact-socials {
+    margin-top: 20px;
+}
+
+.contact-socials .social-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-socials .social-link:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
