@@ -85,7 +85,6 @@ body {
 .aPropos {
     display: flex;              /* Utilisation de flexbox pour aligner les éléments */
     flex-direction: column;     /* Empêche les éléments de s'afficher côte à côte, les empile verticalement */
-    justify-content: center;    /* Centre horizontalement le contenu */
     align-items: center;        /* Centre verticalement le contenu */
     height: 100vh;              /* Hauteur de la fenêtre */
     padding: 0;                 /* Enlever les marges et padding par défaut */
@@ -93,6 +92,7 @@ body {
 }
 
 h1.link {
+    padding-top: 40px;
     font-size: 32px;            /* Taille du titre */
     text-align: center;         /* Centre le texte horizontalement */
     margin-bottom: 20px;        /* Marge en bas pour espacer le titre du contenu */
@@ -100,17 +100,20 @@ h1.link {
 }
 
 .content {
+    padding-top: 20px;
     display: flex;              /* Utilisation de flexbox pour aligner image et texte côte à côte */
     align-items: center;        /* Centre verticalement l'image et le texte */
+    justify-content: center;    /* Centre horizontalement le contenu */
     width: 80%;                 /* Limite la largeur du conteneur à 80% */
     max-width: 1200px;          /* Limiter la largeur max si nécessaire */
 }
 
 .imageMoi {
-    width: 50%;                /* L'image prend 50% de la largeur du conteneur */
+    width: 30%;                /* L'image prend 50% de la largeur du conteneur */
     height: auto;              /* Conserver les proportions de l'image */
     object-fit: cover;         /* S'assure que l'image couvre toute la zone sans déformation */
-    margin-right: 20px;        /* Marge à droite pour espacer l'image du texte */
+    margin-right: 30px;        /* Marge à droite pour espacer l'image du texte */
+    padding-left: 10%;
 }
 
 .text {
@@ -123,11 +126,12 @@ h1.link {
 }
 
 /********** Mes compétences **********/
+/* Section des compétences */
 .mesCompetence {
     height: 100vh;
     padding: 50px 20px;
-    text-align: center;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
 /* Titre de la section */
@@ -137,24 +141,24 @@ h1.link {
     margin-bottom: 30px;
 }
 
-
-
-/* Liste des compétences avec Flexbox pour aligner les items sur une ligne */
+/* Conteneur des compétences avec Flexbox */
 .competences-list {
     display: flex;
-    flex-wrap: wrap; /* Permet aux items de passer à la ligne si nécessaire */
-    justify-content: space-around; /* Répartir les éléments sur toute la largeur disponible */
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
-    padding: 0;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-/* Chaque élément de compétence */
+/* Chaque bloc de compétence */
 .competence-item {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px; /* Largeur fixe des éléments */
+    width: calc(20% - 20px); /* Pour aligner 3 éléments sur une ligne */
+    min-width: 250px;
     text-align: left;
     transition: transform 0.3s ease;
 }
@@ -178,19 +182,21 @@ h1.link {
     margin: 5px 0;
 }
 
-/* Effet au survol */
+/* Effet de survol */
 .competence-item:hover {
     transform: translateY(-10px);
 }
 
-/* Assurer que les éléments sont alignés correctement sur tous les écrans */
-@media screen and (max-width: 767px) {
-    .competences-list {
-        justify-content: center; /* Centrer les éléments sur les petits écrans */
-    }
-
+/* Responsive Design */
+@media screen and (max-width: 768px) {
     .competence-item {
-        width: 100%; /* Les éléments prennent toute la largeur sur les petits écrans */
+        width: calc(45% - 20px); /* 2 éléments par ligne sur les tablettes */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .competence-item {
+        width: 100%; /* 1 élément par ligne sur les petits écrans */
     }
 }
 
