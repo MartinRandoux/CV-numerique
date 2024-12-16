@@ -8,7 +8,7 @@
     <title>Martin RANDOUX</title>
 </head>
 
-<body>
+<body id="top">
     <header>
         <a href="#top">Martin RANDOUX</a>
         <nav>
@@ -17,6 +17,7 @@
                     <li><a href="#about">A propos de moi</a></li>
                     <li><a href="#competences">Compétences</a></li>
                     <li><a href="#formations">Formations</a></li>
+                    <li><a href="#projets">Projets</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                     <li><a href="Ressources/CV.pdf" download="Ressources/CV.pdf">CV</a></li>
                 </ul>
@@ -24,7 +25,7 @@
         </nav>
     </header>
 
-    <section class="accueil" id="top" >
+    <section class="accueil">
         <div class="bienvenue">
             <h1><span></span></h1>
         </div>
@@ -40,86 +41,92 @@
 
     <section class="mesCompetence" id="competences">
         <h1 class="link">Mes Compétences</h1>
-        <div class="competences-list">
-            <div class="competence-item">
-                <h2>Développement Web</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-            </div>
-            <div class="competence-item">
-                <h2>Développement</h2>
-                <ul>
-                    <li>java, python, c</li>
-                    <li>bash</li>
-                </ul>
-            </div>
-            <div class="competence-item">
-                <h2>Bases de données</h2>
-                <ul>
-                    <li>SQL (MySQL, PostgreSQL)</li>
-                    <li>Access</li>
-                </ul>
-            </div>
-            <div class="competence-item">
-                <h2>Gestion de projet</h2>
-                <ul>
-                    <li>Méthodologies Agile (Scrum)</li>
-                    <li>Outils de gestion de projet (Git)</li>
-                </ul>
-            </div>
-            <div class="competence-item">
-                <h2>Outils</h2>
-                <ul>
-                    <li>Visual Studio Code, Jetbrain (IntelliJ IDEA)</li>
-                    <li></li>
-                </ul>
+        <div class="content">
+            <div class="competences-list">
+                <div class="competence-item">
+                    <h2>Développement Web</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="competence-item">
+                    <h2>Développement</h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div class="competence-item">
+                    <h2>Bases de données</h2>
+                    <ul>
+                        <li>SQL (MySQL, PostgreSQL)</li>
+                        <li>Access</li>
+                    </ul>
+                </div>
+                <div class="competence-item">
+                    <h2>Gestion de projet</h2>
+                    <ul>
+                        <li>Méthodologies Agile (Scrum)</li>
+                        <li>Outils de gestion de projet (Git)</li>
+                    </ul>
+                </div>
+                <div class="competence-item">
+                    <h2>Outils</h2>
+                    <ul>
+                        <li>Visual Studio Code</li>
+                        <li>Jetbrain (IntelliJ IDEA)</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="mesFormations" id="formations">
         <h1 class="link">Mes Formations</h1>
-        <div class="formation-container">
-            <div class="formation-item gauche">
-                <div class="content">
-                    <h2>BUT Informatique</h2>
-                    <p>IUT de Lille, 2022 - de nos jours</p>
-                </div>
+        <div class="container">
+            <div class="formation">
+                <h2>BUT Informatique <span>2022 - de nos jours</span></h2>
+                <a href="https://iut.univ-lille.fr/">IUT de Lille à Villeneuve d'Asc</a>
             </div>
-    
-            <div class="formation-item droite">
-                <div class="content">
-                    <h2>Baccalauréat Général</h2>
-                    <p>Lycée Saint Pierre, 2022</p>
-                </div>
+            <div class="formation">
+                <h2>Baccalauréat Général <span>2022</span></h2>
+                <a href="https://www.saintpierrecalais.fr/">Lycée Saint Pierre à Calais</a>
+            </div>            
+        </div>
+    </section>
+
+    <section class="mesProjets" id="projets">
+        <h1 class="link">Mes Projets</h1>
+        <div class="projets-container">
+            <div class="projet-item">
+                <h2>Projet 1</h2>
+                <p>Description de votre premier projet ici.</p>
+            </div>
+            <div class="projet-item">
+                <h2>Projet 2</h2>
+                <p>Description de votre deuxième projet ici.</p>
+            </div>
+            <div class="projet-item">
+                <h2>Projet 3</h2>
+                <p>Description de votre troisième projet ici.</p>
             </div>
         </div>
     </section>
 
-    <section class="contact" id="contacts">
+    <footer class="contact" id="contacts">
         <h1 class="link">Me Contacter</h1>
         <div class="contact-container">
-            <div class="contact-info">
-                <p><strong>Email :</strong> <a href="mailto:martin.randoux@example.com">martin.randoux@example.com</a></p>
-            </div>
-            <div class="contact-socials">
-                <a href="https://www.linkedin.com" target="_blank" class="social-link">LinkedIn</a>
-                <a href="https://github.com" target="_blank" class="social-link">GitHub</a>
-            </div>
+            <a href="mailto:martinrndx@gmail.com"><img src="Images/Gmail_Logo.png" alt="logo gmail"></a>
+            <a href="https://www.linkedin.com/in/martin-randoux-53522a342"><img src="Images/linkedin_Logo.png" alt="logo linkedin"></a>
         </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Martin Randoux. Tous droits réservés.</p>
+        <p>&copy; 2024 Martin Randoux.</p>
     </footer>
+        
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
-
 </body>
-
 </html>
