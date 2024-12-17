@@ -109,6 +109,7 @@ nav .menu li a:hover {
     align-items: center;
     justify-content: space-evenly;
     width: 80%;
+    padding-top: 5%;
 }
 
 .aPropos .imageMoi {
