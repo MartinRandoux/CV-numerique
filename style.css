@@ -139,14 +139,13 @@ nav .menu li a:hover {
     flex-wrap: wrap;
     align-items: center;
 }
-/* Titre de la section */
+
 .softSkills h1.link {
     font-size: 32px;
     text-align: center;
     color: #333;
 }
 
-/* Conteneur des soft skills en grille */
 .softskills-list {
     display: flex;
     flex-wrap: wrap;
@@ -157,7 +156,6 @@ nav .menu li a:hover {
     padding-bottom: 15%;
 }
 
-/* Chaque cube de soft skill */
 .softskill-item {
     width: 25%;
     background-color: #fff;
@@ -171,21 +169,18 @@ nav .menu li a:hover {
     max-height: 100px;
 }
 
-/* Titre de chaque soft skill */
 .softskill-item h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
 
-/* Description de chaque soft skill */
 .softskill-item p {
     font-size: 18px;
     color: #555;
     line-height: 1.5;
 }
 
-/* Effet au survol */
 .softskill-item:hover {
     transform: translateY(-10px);
     max-width: 30%;
@@ -380,7 +375,6 @@ nav .menu li a:hover {
     text-align: justify;
 }
 
-/* Titre de la section */
 .mesProjets h1.link {
     font-size: 32px;
     color: #333;
@@ -388,7 +382,6 @@ nav .menu li a:hover {
     padding-top: 2%;
 }
 
-/* Conteneur des projets */
 .projets-container {
     display: flex;
     flex-direction: column;
@@ -397,32 +390,28 @@ nav .menu li a:hover {
     width: 100%;
 }
 
-/* Chaque bloc de projet */
 .projet-item {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Occupe toute la largeur du conteneur */
+    width: 100%;
     text-align: left;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Titre du projet */
 .projet-item h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
 
-/* Description du projet */
 .projet-item p {
     font-size: 18px;
     color: #555;
     line-height: 1.5;
 }
 
-/* Effet au survol */
 .projet-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
