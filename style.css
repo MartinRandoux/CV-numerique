@@ -99,6 +99,10 @@ nav .menu li a:hover {
     color: #333;
 }
 
+.aPropos p {
+    text-align: justify;
+}
+
 .aPropos .content {
     margin-top: 1%;
     display: flex;
@@ -119,6 +123,81 @@ nav .menu li a:hover {
     width: 50%;
     color: #333;
     box-sizing: border-box;
+}
+
+/************ Soft Skills *************/
+
+.softSkills {
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding-top: 5%;
+}
+
+.softSkills .content {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+/* Titre de la section */
+.softSkills h1.link {
+    font-size: 32px;
+    text-align: center;
+    color: #333;
+}
+
+/* Conteneur des soft skills en grille */
+.softskills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    padding-bottom: 15%;
+}
+
+/* Chaque cube de soft skill */
+.softskill-item {
+    width: 25%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+    padding: 10px;
+    min-height: 80px;
+    max-width: 20%;
+    max-height: 100px;
+}
+
+/* Titre de chaque soft skill */
+.softskill-item h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description de chaque soft skill */
+.softskill-item p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Effet au survol */
+.softskill-item:hover {
+    transform: translateY(-10px);
+    max-width: 30%;
+    max-height: 150px;
+
+    p {
+        display: contents;
+    }
+}
+
+.softskill-item p {
+    display: none;
 }
 
 
@@ -161,6 +240,7 @@ nav .menu li a:hover {
     text-align: left;
     transition: transform 0.3s ease;
     padding: 10px;
+    min-height: 130px;
 }
 
 .competence-item h2 {
@@ -282,10 +362,74 @@ nav .menu li a:hover {
     height: 100vh;
     padding-top: 5%;
     background-color: #f5f5f5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mesProjets a {
+    text-decoration: none;
 }
 
 .mesProjets h1 {
     text-align: center;
+}
+
+.mesProjets p {
+    text-align: justify;
+}
+
+/* Titre de la section */
+.mesProjets h1.link {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    padding-top: 2%;
+}
+
+/* Conteneur des projets */
+.projets-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Chaque bloc de projet */
+.projet-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Occupe toute la largeur du conteneur */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Titre du projet */
+.projet-item h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Description du projet */
+.projet-item p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Effet au survol */
+.projet-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+
+    h2 {
+        text-decoration: underline;
+    }
 }
 
 
