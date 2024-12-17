@@ -180,6 +180,8 @@ nav .menu li a:hover {
     font-size: 18px;
     color: #555;
     line-height: 1.5;
+    text-align: justify;
+    display: none;
 }
 
 .softskill-item:hover {
@@ -190,10 +192,6 @@ nav .menu li a:hover {
     p {
         display: contents;
     }
-}
-
-.softskill-item p {
-    display: none;
 }
 
 
