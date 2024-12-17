@@ -358,6 +358,9 @@ nav .menu li a:hover {
     height: 100vh;
     padding-top: 5%;
     background-color: #f5f5f5;
+}
+
+.mesProjets .container {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -379,8 +382,7 @@ nav .menu li a:hover {
 .mesProjets h1.link {
     font-size: 32px;
     color: #333;
-    margin-bottom: 30px;
-    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .projets-container {
