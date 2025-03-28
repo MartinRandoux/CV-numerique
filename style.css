@@ -64,7 +64,7 @@ nav .menu li a:hover {
 
 .accueil {
     height: 100vh;
-    background-image: url('Images/ordiAccueil.jpg');
+    background-image: url('Images/Autres/ordiAccueil.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ nav .menu li a:hover {
 }
 
 .aPropos .imageMoi {
-    width: 30%;
+    width: 50vh;
     height: auto;
     object-fit: cover;
 }
@@ -350,12 +350,13 @@ nav .menu li a:hover {
 }
 
 
-/************ Contact *************/
+/************ Projet *************/
 
 .mesProjets {
-    height: 100vh;
+    min-height: 100vh;
     padding-top: 5%;
     background-color: #f5f5f5;
+    padding-bottom: 20px;
 }
 
 .mesProjets .container {
@@ -383,15 +384,20 @@ nav .menu li a:hover {
     padding-bottom: 2%;
 }
 
+/* Décalage à droite des projets */
 .projets-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 800px;
     width: 100%;
+    margin-left: 50px; /* Décalage vers la droite */
 }
 
+/* Style des projets */
 .projet-item {
+    display: flex;
+    align-items: center;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -401,26 +407,60 @@ nav .menu li a:hover {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projet-item h2 {
+.projet-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Style des images */
+.projet-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Contenu du projet (colonne pour respecter la mise en page) */
+.projet-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* Style du titre du projet */
+.projet-content h2 {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
 
-.projet-item p {
+/* Style du texte */
+.projet-content p {
     font-size: 18px;
     color: #555;
     line-height: 1.5;
+    flex-grow: 1; /* Permet au texte de prendre l'espace disponible */
 }
 
-.projet-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-
-    h2 {
-        text-decoration: underline;
-    }
+/* Style des tags (fixés en bas) */
+.tags {
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
 }
+
+.tag {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+
 
 
 /************ Contact *************/
